@@ -9,3 +9,9 @@ Inside the callback, "Callback executed" should be printed
 Final output: Print the username first, then the posts.
 
 3. Create three functions: loginUser (returns a user after 1 sec), fetchPermissions (returns permissions after 1 sec), and loadDashboard (returns “Dashboard loaded” after 1 sec). Call them in sequence: first loginUser, then inside it fetchPermissions, then loadDashboard, and finally print the result.
+
+4. getProduct → getPrice → applyDiscount
+getProduct(id) → after 1 sec return { id, name }
+Then call getPrice(productId) → returns price
+Then applyDiscount(price) → returns final discounted price
+Output: Print discounted price.
