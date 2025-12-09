@@ -8,10 +8,16 @@ Inside the callback, "Callback executed" should be printed
 2. Create a getUser function that takes a username and returns (after 1 second) an object with id and username, then call getUserPosts, which (after 1 second) returns a posts array.
 Final output: Print the username first, then the posts.
 
-3. Create three functions: loginUser (returns a user after 1 sec), fetchPermissions (returns permissions after 1 sec), and loadDashboard (returns “Dashboard loaded” after 1 sec). Call them in sequence: first loginUser, then inside it fetchPermissions, then loadDashboard, and finally print the result.
+3. Create three functions: loginUser (returns a user after 1 sec), fetchPermissions (returns permissions after 1 sec), and loadDashboard (returns “Dashboard loaded” after 1 sec).
+Call them in sequence: first loginUser, then inside it fetchPermissions, then loadDashboard, and finally print the result.
 
-4. getProduct → getPrice → applyDiscount
+5. getProduct → getPrice → applyDiscount
 getProduct(id) → after 1 sec return { id, name }
 Then call getPrice(productId) → returns price
 Then applyDiscount(price) → returns final discounted price
 Output: Print discounted price.
+
+6. registerUser → sendOTP → verifyOTP registerUser(email)
+gives a user object after 1 sec
+Call sendOTP(userId) → returns OTP Call verifyOTP(otp) → returns "Verified"
+Output: Print “User verified”.
